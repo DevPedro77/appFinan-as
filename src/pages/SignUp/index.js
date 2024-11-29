@@ -54,7 +54,7 @@ export default function SignUp(){
 
         <SubmitButton onPress={handleSignUp}>
             {loadingAuth ? ( 
-              <ActivityIndicator size={25} color="#00B94A" />
+              <ActivityIndicator size={20} color="#fff" />
             ) : (
               <SubmitText>Cadastrar</SubmitText>
             )}

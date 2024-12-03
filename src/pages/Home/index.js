@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useContext} from "react";
 import {View, Text} from 'react-native'
 
-export function Home() {
+import { AuthContext } from "../../contexts/auth";
+import Header from '../../components/Header';
+import {Background} from './styles';
+
+export default function Home() {
   return(
-    <View>
-      <Text>Home page</Text>
-    </View>
+    <Background>
+      <Header
+        title= 'Movimentações'
+      />
+    </Background>
   )
 }

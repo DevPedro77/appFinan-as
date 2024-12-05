@@ -6,12 +6,12 @@ export default function BalanceItem({data}){
     if(data.tag === 'saldo'){
       return{
         label: 'Saldo atual',
-        color: '009432'
+        color: '000'
       }
     } else if(data.tag === 'receita') {
       return{
         label: 'Entradas de hoje',
-        color: '1289A7'
+        color: '009432'
       }
     } else{
       return{

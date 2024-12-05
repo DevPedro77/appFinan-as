@@ -10,7 +10,7 @@ export default function Header( {title}){
   return(
     <Container>
       <ButtonMenu onPress={ () => navigate.openDrawer()}>
-      <Entypo name="menu" size={35} color="black" />
+      <Entypo name="menu" size={35} color="#000" />
       </ButtonMenu>
       {title && (
         <Title>

@@ -6,7 +6,7 @@ export default function BalanceItem({data}){
     if(data.tag === 'saldo'){
       return{
         label: 'Saldo atual',
-        color: '000'
+        color: '121212'
       }
     } else if(data.tag === 'receita') {
       return{

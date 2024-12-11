@@ -21,7 +21,7 @@ export const Name = styled.Text`
 `;
 
 export const NewLink = styled.TouchableOpacity`
-  background-color: #3b3dbf;
+  background-color: #121212;
   width: 90%;
   height: 45px;
   border-radius: 8px;

@@ -16,7 +16,7 @@ Um aplicativo simples e eficiente para gerenciar receitas, despesas e saldos pes
   - Organização por categorias.
   - Pesquisa com filtros por data.
 - **Perfil do Usuário**:
-  - Visualização e edição das informações pessoais.
+  - Funcionalidade de Sair da conta 
 
 ---
 

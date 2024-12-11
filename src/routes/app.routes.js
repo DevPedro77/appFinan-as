@@ -3,6 +3,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer'
 
 import Home from '../pages/Home'
 import RegisterForm from "../pages/Register";
+import Profile from "../pages/Profile";
 const AppDrawer = createDrawerNavigator();
 
 function AppRoutes() { 
@@ -31,6 +32,10 @@ function AppRoutes() {
       <AppDrawer.Screen
         name='Registrar'
         component={RegisterForm}
+      />
+      <AppDrawer.Screen
+        name='Perfil'
+        component={Profile}
       />
 
     </AppDrawer.Navigator>

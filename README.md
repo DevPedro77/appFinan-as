@@ -16,31 +16,26 @@ Um aplicativo simples e eficiente para gerenciar receitas, despesas e saldos pes
   - Organização por categorias.
   - Pesquisa com filtros por data.
 - **Perfil do Usuário**:
-  - Funcionalidade de Sair da conta 
+  - Funcionalidade de Sair da conta.
 
 ---
 
 ## 🖼️ **Layout do Aplicativo**
 
-### **1. Tela de Login e Cadastro**
-- Tela de boas-vindas com campos para login.
-- Botão para criar uma conta.
-- Design minimalista com foco em usabilidade.
+### **1. Tela de Login**
+![Tela de Login](./signIn.png)
 
-### **2. Dashboard**
-- Exibição do saldo total.
-- Gráfico circular ou de barras mostrando o resumo de receitas e despesas.
-- Botões rápidos para adicionar uma nova receita ou despesa.
+### **2. Tela de Cadastro**
+![Tela de Cadastro](./signUp.png)
 
-### **3. Tela de Receitas/Despesas**
-- Listagem de transações recentes.
-- Botão para cadastrar uma nova transação.
-- Opção de aplicar filtros por data, categoria ou valor.
+### **3. Tela de Perfil**
+![Tela de Perfil](./perfil.png)
 
-### **4. Tela de Perfil**
-- Informações do usuário (nome, e-mail, etc.).
-- Botão para editar perfil.
-- Opção para sair do aplicativo (logout).
+### **4. Tela de Registro de Receita/Despesa**
+![Tela de Registro](./registrar.png)
+
+### **5. Dashboard**
+![Dashboard](./Screenshot 2024-12-12 142930.png)
 
 ---
 

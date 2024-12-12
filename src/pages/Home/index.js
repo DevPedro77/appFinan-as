@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from "react";
-import {View, Text, TouchableOpacity} from 'react-native'
+import {View, Text, TouchableOpacity, Modal} from 'react-native'
 import { AuthContext } from "../../contexts/auth";
 import Header from '../../components/Header';
 import {
@@ -15,12 +15,14 @@ import { useIsFocused } from "@react-navigation/native";
 import BalanceItem from "../../components/BalanceItem";
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import HistoricoList from "../../components/HistoricoList";
+import CalendarModal from "../../components/CalendarModal";
 
 export default function Home() {
   const isFocused = useIsFocused();
   const [listBalace, setListBalace] = useState([])
   const [dateMovements, setDateMovements] = useState(new Date())
   const [movements, setMovements] = useState([])
+  const [modalVisible, setModalVisible] = useState(false); 
 
   useEffect( ()=>{
     let isActive = true;
@@ -63,11 +65,16 @@ export default function Home() {
     }
   }
 
+  function filterDateMovements(dateSelected){
+    setDateMovements(dateSelected)
+  }
+
+
 
   return(
     <Background>
       <Header
-        title= 'Movimentações'
+        title= ' Minhas movimentações'
       />
 
       <ListBalance
@@ -79,7 +86,7 @@ export default function Home() {
       />
 
       <Area>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={ ()=> setModalVisible(true) }>
         <MaterialCommunityIcons name="calendar-month-outline" size={30 } color="black" />
         </TouchableOpacity>
         <Title>Ultimas movimentações</Title>
@@ -92,6 +99,13 @@ export default function Home() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={ {paddingBottom: 20}}
       />
+
+      <Modal visible={modalVisible} animationType="fade" transparent={true}>
+        <CalendarModal
+        setVisible={() =>setModalVisible(false)}
+        handleFilter={filterDateMovements}
+        />
+      </Modal>
     </Background>
   )
 }

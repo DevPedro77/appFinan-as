@@ -27,24 +27,24 @@ Um aplicativo simples e eficiente para gerenciamento de finanças pessoais, perm
 ## 🖼️ **Layout do Aplicativo**
 
 ### **1. Tela de Login**
-Acesso rápido e seguro.  
-![Tela de Login](../../../saldoApp/assets/appSaldoImagens/signIn.png)
+Tela inicial para que o usuário possa acessar sua conta, com campos para e-mail e senha, além de um botão para criar uma nova conta.  
 
 ### **2. Tela de Cadastro**
-Criação de novos usuários de forma prática.  
-![Tela de Cadastro](../saldoApp/assets/appSaldoImagens/signUp.png)
+Interface limpa e objetiva para criação de novos usuários, contendo campos para nome, e-mail e senha, além de um botão para finalizar o cadastro.  
 
 ### **3. Tela de Perfil**
-Visualização do perfil e logout com um clique.  
-![Tela de Perfil](../saldoApp/assets/appSaldoImagens/perfil.png)
+Apresenta o nome do usuário e funcionalidades como “Registrar Gastos” e “Sair”.  
 
 ### **4. Tela de Registro**
-Interface intuitiva para cadastrar receitas e despesas.  
-![Tela de Registro](../saldoApp/assets/appSaldoImagens/registrar.png)
+Permite o cadastro de uma nova transação financeira. Inclui:  
+- Campos para o nome e valor da transação.  
+- Botões para escolher se é receita ou despesa.  
+- Botão para salvar a transação.  
 
 ### **5. Dashboard**
-Resumo de movimentações financeiras com entradas e saídas destacadas.  
-![Dashboard](../saldoApp/assets/appSaldoImagens/home.png)
+Exibe o resumo financeiro do dia, com separação clara entre entradas e saídas. Apresenta:  
+- Total de entradas e saídas em destaque.  
+- Histórico das últimas transações, organizadas por tipo (receita/despesa).  
 
 ---
 
